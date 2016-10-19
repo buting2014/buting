@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>半透明边框</title>
+	<style type="text/css">
+		.box{
+			margin: 20px auto;
+			width: 400px;
+			height: 300px;
+		}
+		.font{
+			color: #000000;
+			font-size: 16px;
+			line-height: 200px;
+			text-align: center;
+			vertical-align: middle;
+		}
+		.border_transparent{
+			background: url(./static/images/1.jpg) no-repeat;
+		}
+		.word{
+			background: white;
+			border:50px solid hsla(0,0%,100%,.5);
+			background-clip: padding-box;
+
+			height: 200px;
+			line-height: 200px;
+		}
+		.many_border{
+			background: yellowgreen;
+			box-shadow: 0 0 0 10px #655,
+						0 0 0 15px pink, 
+						0 2px 5px 15px rgba(0,0,0,.6);
+		}
+		.many_border_2{
+			background: yellowgreen;
+			border: 10px solid #655;
+			outline: 5px solid pink;
+		}
+		.many_border_3{
+			background: #655;
+			outline: 1px dashed #fff;
+			outline-offset: -5px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box border_transparent">
+		<div class="word">
+			Hello, world
+		</div>
+	</div>
+	<div class="box many_border">
+		<div class="font">
+			Hello, world
+		</div>
+	</div>
+	<div class="box many_border_2">
+		<div class="font">
+			Hello, world
+		</div>
+	</div>
+	<div class="box many_border_3">
+		<div class="font">
+			Hello, world
+		</div>
+	</div>
+
+</body>
+</html>
