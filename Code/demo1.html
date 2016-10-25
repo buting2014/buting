@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>半透明边框</title>
+	<title>边框类</title>
 	<style type="text/css">
 		.box{
 			margin: 20px auto;
@@ -43,6 +43,13 @@
 			outline: 1px dashed #fff;
 			outline-offset: -5px;
 		}
+		.radius_border{
+			background: #fff;
+			border-radius:.8em;
+			padding:1em;
+			box-shadow: 0 0 0 .5em #655;
+			outline:.6em solid #655;
+		}
 	</style>
 </head>
 
@@ -67,6 +74,10 @@
 			Hello, world
 		</div>
 	</div>
-
+	<div class="box radius_border">
+		<div class="font">
+			Hello, world
+		</div>
+	</div>
 </body>
 </html>

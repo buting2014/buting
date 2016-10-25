@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>背景类</title>
+<style>
+	.box{
+		width: 500px;
+		height: 300px;
+		margin-bottom: 20px;
+	}
+	.bg_1{
+		background: linear-gradient(#fb3 50%, #58a 50%);
+		background-size: 100% 30px;
+	}
+	.bg_2{
+		/*如果某个色标的位置值比整个列表中在它之前的 色标的位置值都要小，则该色标的位置会被设置为它前面所有色标位置值中的最大值*/
+		background: linear-gradient(#fb3 50%, #58a 0);
+		background-size: 100% 30px;
+	}
+	.bg_3{
+		background: linear-gradient(#fb3 33.3%, #58a 0, #58a 66.6%, #666 0);
+		background-size: 100% 45px;
+
+	}
+</style>
+</head>
+<body>
+	<div class="box bg_1"></div>
+	<div class="box bg_2"></div>
+	<div class="box bg_3"></div>
+</body>
+</html>
